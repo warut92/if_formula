@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวสร้างสูตร if</title>
+  </head>
+  <body>
+    <h1>ตัวสร้างสูตร if</h1>
+    ใส่ตำแหน่งของเซลล์ : <input type="text" id="cellName" oninput="" onkeyup="this.value = this.value.toUpperCase();"><br>
+    จำนวนเงื่อนไข : <input id="conNum" type="text" name="" value="" oninput="genConditions()" onfocus="genConditions()" minLength="1" maxLength="10"><br>
+    เงื่อนไขเริ่มต้น : <input id="conEx" type="text" name="" value="" oninput="genConditions()"><br>
+    <div id="ConDiv"></div>
+    <button onclick="genFormula()">รัน</button><button onclick="reset()">รีเซต</button><br>
+    <br>
+    <textarea name="name" rows="8" cols="80" id="formula" onfocus="copyFunction()"></textarea>
+    <p style="color:red;" id="alert"></p>
+
+    <a href="https://github.com/warut92/formula_grade">GitHub</a>
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>
